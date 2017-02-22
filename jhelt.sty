@@ -1,0 +1,27 @@
+% My personal LaTeX package
+% 
+% (c) Jeffrey Helt
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{jhelt}[2017/02/05 v0.01 My personal LaTeX package]
+
+%% Dependencies
+\RequirePackage{amsmath,amssymb}
+
+%% General
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+%% Probability and Statistics
+\newcommand{\given}{\mid}
+\newcommand{\expect}[1]{\operatorname{\mathbb{E}}\left[#1\right]}
+
+%% Linear algebra
+\newcommand{\trace}[1]{\operatorname{\textbf{tr}}\left(#1\right)}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\endinput
