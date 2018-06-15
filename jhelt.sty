@@ -10,7 +10,15 @@
 \ProvidesPackage{jhelt}[2017/02/05 v0.01 My personal LaTeX package]
 
 %% Dependencies
-\RequirePackage{amsmath,amssymb}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{caption}
+\RequirePackage{cite}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\RequirePackage{siunitx}
+\RequirePackage{xspace}
+
 
 %% General
 \DeclareMathOperator*{\argmin}{arg\,min}
@@ -18,7 +26,7 @@
 
 %% Probability and Statistics
 \newcommand{\given}{\mid}
-\newcommand{\expect}[1]{\operatorname{\mathbb{E}}\left[#1\right]}
+\DeclareMathOperator{\E}{\mathbf{E}}
 
 %% Linear algebra
 \newcommand{\trace}[1]{\operatorname{\textbf{tr}}\left(#1\right)}
