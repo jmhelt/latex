@@ -7,18 +7,19 @@
 %% in directory macros/latex/base/lppl.txt.
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{jhelt}[2017/02/05 v0.01 My personal LaTeX package]
+\ProvidesPackage{jhelt}[2019/01/14 My LaTeX package]
 
 %% Dependencies
+\RequirePackage{algorithm}
+\RequirePackage[noend]{algpseudocode}
+\RequirePackage{amsfonts}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{caption}
-\RequirePackage{cite}
+\RequirePackage[group-separator={,}]{siunitx}
 \RequirePackage{color}
 \RequirePackage{graphicx}
-\RequirePackage{siunitx}
 \RequirePackage{xspace}
-
 
 %% General
 \DeclareMathOperator*{\argmin}{arg\,min}
