@@ -1,0 +1,437 @@
+@Comment Abbreviations
+
+@Comment Journal Abbreviations
+@string{CCR="{ACM Computer Communications Review}"}
+@string{JACM="{Journal of the ACM}"}
+@string{TEAC="{ACM Transactions on Economics and Computation}"}
+@string{TON="{IEEE/ACM Transactions on Networking}"}
+@string{TPDS="{IEEE Transactions on Parallel and Distributed Systems}"}
+
+@Comment Proceedings Abbreviations
+@string{CONEXT="{Proc.\ ACM CoNEXT}"}
+@string{EUROSYS="{Proc.\ ACM European Conference on Computer Systems (EuroSys)}"}
+@string{FAST="{Proc.\ USENIX FAST}"}
+@string{ICNP="{Proc.\ IEEE International Conference on Network Protocols (ICNP)}"}
+@string{INFOCOM="{Proc.\ IEEE INFOCOM}"}
+@string{ISCA="{Proc.\ International Symposium on Computer Architecture (ISCA)}"}
+@string{ISPASS="{Proc.\ IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)}"}
+@string{IWQOS="{Proc.\ IEEE/ACM International Symposium on Quality of Service (IWQoS)}"}
+@string{NSDI="{Proc.\ USENIX NSDI}"}
+@string{OSDI="{Proc.\ USENIX OSDI}"}
+@string{PODS="{Proc.\ ACM PODS}"}
+@string{SIGCOMM="{Proc.\ ACM SIGCOMM}"}
+@string{SIGMETRICS="{Proc.\ ACM SIGMETRICS}"}
+@string{SOCC="{Proc.\ ACM Symposium on Cloud Computing (SOCC)}"}
+
+
+@Comment References
+@inproceedings{goyalStarttimeFairQueueing1996,
+  title = {Start-Time Fair Queueing: A Scheduling Algorithm for Integrated Services Packet Switching Networks},
+  author = {Pawan Goyal and Harrick Vin and Haichen Chen},
+  crossref = {sigcomm1996},
+  pages = {157--168},
+}
+
+@article{stiliadisEfficientFairQueueing1998,
+  title = {Efficient Fair Queueing Algorithms for Packet-Switched Networks},
+  volume = 6,
+  issn = {1063-6692},
+  number = 2,
+  journal = TON,
+  author = {Dimitrios Stiliadis and Anujan Varma},
+  month = apr,
+  year = 1998,
+  pages = {175--185},
+}
+
+@article{shreedharEfficientFairQueuing1996,
+  title = {Efficient Fair Queuing Using Deficit Round-Robin},
+  volume = 4,
+  issn = {1063-6692},
+  number = 3,
+  journal = TON,
+  author = {M. Shreedhar and George Varghese},
+  month = jun,
+  year = 1996,
+  pages = {375--385},
+}
+
+@inproceedings{liLowcomplexityMultiresourcePacket2015,
+  title = {Low-Complexity Multi-Resource Packet Scheduling for Network Function Virtualization},
+  author = {Xin Li and Chen Qian},
+  crossref = {infocom2015},
+  pages = {1400--1408},
+}
+
+@inproceedings{wangMultiResourceRobinLow2013,
+  title = {Multi-Resource Round Robin: A Low Complexity Packet Scheduler with Dominant Resource Fairness},
+  crossref = {icnp2013},
+  author = {Wei Wang and Baochun Li and Ben Liang},
+  pages = {1--10},
+}
+
+@inproceedings{wangLowComplexityMultiresource2014,
+  title = {Low Complexity Multi-Resource Fair Queueing with Bounded Delay},
+  crossref = {infocom2014},
+  author = {Wei Wang and Ben Liang and Baochun Li},
+  month = apr,
+  year = 2014,
+  pages = {1914--1922},
+}
+
+@article{ghodsiMultiresourceFairQueueing2012,
+  title = {Multi-Resource Fair Queueing for Packet Processing},
+  volume = 42,
+  issn = {0146-4833},
+  number = 4,
+  journal = CCR,
+  author = {Ali Ghodsi and Vyas Sekar and Matei Zaharia and Ion Stoica},
+  month = aug,
+  year = 2012,
+  pages = {1--12},
+}
+
+@article{lamportInterprocessCommunication1986,
+  title = {On Interprocess Communication},
+  volume = 1,
+  issn = {1432-0452},
+  number = 2,
+  journal = {Distributed Computing},
+  author = {Leslie Lamport},
+  month = jun,
+  year = 1986,
+  pages = {86--101},
+}
+
+@inproceedings{demmeRapidIdentificationArchitectural2011,
+  title = {Rapid Identification of Architectural Bottlenecks via Precise Event Counting},
+  author = {John Demme and Simha Sethumadhavan},
+  crossref = {isca2011},
+  pages = {353--364},
+}
+
+@inproceedings{weaverSelfmonitoringOverheadLinux2015,
+  title = {Self-Monitoring Overhead of the {{Linux}} {{perf\_event}} Performance Counter Interface},
+  author = {Vincent Weaver},
+  crossref = {ispass2015},
+  pages = {102--111},
+}
+
+@inproceedings{wangBalancingFairnessEfficiency2014,
+  title = {Balancing Fairness and Efficiency in Tiered Storage Systems with Bottleneck-Aware Allocation},
+  crossref = {fast2014},
+  author = {Hui Wang and Peter Varman},
+  pages = {229--242},
+}
+
+@inproceedings{khalidIronIsolatingNetworkbased2018,
+  title = {Iron: Isolating Network-Based {{CPU}} in Container Environments},
+  author = {Junair Khalid and Eric Rozner and Weslet Felter and Cong Xu and Karthick Rajamani and Alexandre Ferreira and Aditya Akella},
+  crossref = {nsdi2018},
+  pages = {313--328},
+}
+
+@inproceedings{zhangTreadmillAttributingSource2016,
+  title = {Treadmill: Attributing the Source of Tail Latency through Precise Load Testing and Statistical Inference},
+  author = {Yunqi Zhang and David Meisner and Jason Mars and Lingjia Tang},
+  crossref = {isca2016},
+  pages = {456--468},
+}
+
+@inproceedings{liTalesTailHardware2014,
+  title = {Tales of the Tail: Hardware, OS, and Application-Level Sources of Tail Latency},
+  author = {Jialin Li and Naveen Sharma and Dan Ports and Steven Gribble},
+  crossref = {socc2014},
+}
+
+@inproceedings{schroederOpenClosedCautionary2006,
+  title = {Open Versus Closed: A Cautionary Tale},
+  author = {Bianca Schroeder and Adam Wierman and Mor Harchol-Balter},
+  crossref = {nsdi2006},
+  pages = {239--252},
+}
+
+@article{parkesDominantResourceFairness2015,
+  title = {Beyond Dominant Resource Fairness: Extensions, Limitations, and Indivisibilities},
+  volume = 3,
+  issn = {2167-8375},
+  number = 1,
+  journal = TEAC,
+  author = {David Parkes and Ariel Procaccia and Nisarg Shah},
+  month = mar,
+  year = 2015,
+}
+
+@inproceedings{fanMemC3CompactConcurrent,
+  title = {MemC3: Compact and Concurrent MemCache with Dumber Caching and Smarter Hashing},
+  author = {Bin Fan and David Andersen and Michael Kaminsky},
+  crossref = {nsdi2013},
+  pages = {371--384},
+}
+
+@article{kanhereFairEfficientPacket2002,
+  title = {Fair and Efficient Packet Scheduling Using Elastic Round Robin},
+  volume = 13,
+  issn = {1045-9219},
+  number = 3,
+  journal = TPDS,
+  author = {Salil Kanhere and Harish Sethu and Alpa Parekh},
+  month = mar,
+  year = 2002,
+  pages = {324--336},
+}
+
+@inproceedings{bonaldMultiResourceFairnessObjectives2015,
+  title = {Multi-Resource Fairness: Objectives, Algorithms and Performance},
+  author = {Thomas Bonald and James Roberts},
+  crossref = {sigmetrics2015},
+  pages = {31--42},
+}
+
+@inproceedings{loziLinuxschedulerdecade2016,
+  title = {The {{Linux}} Scheduler: A Decade of Wasted Cores},
+  author = {Jean-Pierre Lozi and Baptiste Lepers and Justin Funston and Fabien Gaud and Vivien Qu\'ema and Alexandra Fedorova},
+  crossref = {eurosys2016},
+}
+
+@inproceedings{mace2DFQTwoDimensionalFair2016,
+  title = {{{2DFQ}}: Two-Dimensional Fair Queuing for Multi-Tenant Cloud Services},
+  author = {Jonathan Mace and Peter Bodik and Madanlal Musuvathi and Rodrigo Fonseca and Krishnan Varadarajan},
+  crossref = {sigcomm2016},
+  pages = {144--159},
+}
+
+@inproceedings{bangaResourceContainersNew1999,
+  title = {Resource Containers: A New Facility for Resource Management in Server Systems},
+  author = {Gaurav Banga and Peter Druschel and Jeffrey Mogul},
+  crossref = {osdi1999},
+  pages = {45--58},
+}
+
+@inproceedings{chowdhuryHUGMultiresourceFairness2016,
+  title = {{{HUG}}: Multi-Resource Fairness for Correlated and Elastic Demands},
+  author = {Mosharaf Chowdhury and Zhenhua Liu and Ali Ghodsi and Ion Stoica},
+  crossref = {nsdi2016},
+  pages = {407--424},
+}
+
+@article{parekhgeneralizedprocessorsharing1993,
+  title = {A Generalized Processor Sharing Approach to Flow Control in Integrated Services Networks: The Single-Node Case},
+  volume = 1,
+  issn = {1063-6692},
+  number = 3,
+  journal = TON,
+  author = {Abhay Parekh and Robert Gallager},
+  month = jun,
+  year = 1993,
+  pages = {344--357},
+}
+
+@inproceedings{ghodsiDominantResourceFairness2011,
+  title = {Dominant Resource Fairness: Fair Allocation of Multiple Resource Types},
+  author = {Ali Ghodsi and Matei Zaharia and Benjamin Hindman and Andy Konwinski and Scott Shenker and Ion Stoica},
+  crossref = {nsdi2011},
+  pages = {323--336},
+}
+
+@inproceedings{wangMultiresourceGeneralizedProcessor2013,
+  title = {Multi-Resource Generalized Processor Sharing for Packet Processing},
+  author = {Wei Wang and Ben Liang and Baochun Li},
+  crossref = {iwqos2013},
+}
+
+@inproceedings{wangFairnessEfficiencyTradeoffPacket2014,
+  title = {On the Fairness-Efficiency Tradeoff for Packet Processing with Multiple Resources},
+  author = {Wei Wang and Chen Feng and Baochun Li and Ben Liang},
+  crossref = {conext2014},
+  pages = {235--248},
+}
+
+@article{baskettOpenClosedMixed1975,
+  title = {Open, Closed, and Mixed Networks of Queues with Different Classes of Customers},
+  volume = 22,
+  issn = {0004-5411},
+  number = 2,
+  journal = JACM,
+  author = {Forest Baskett and K. Mani Chandy and Richard Muntz and Fernando Palacios},
+  month = apr,
+  year = 1975,
+  pages = {248--260},
+}
+
+@inproceedings{bhattacharyaHierarchicalSchedulingDiverse2013,
+  title = {Hierarchical Scheduling for Diverse Datacenter Workloads},
+  author = {Arka Bhattacharya and David Culler and Eric Friedman and Ali Ghodsi and Scott Shenker and Ion Stoica},
+  crossref = {socc2013},
+}
+
+@inproceedings{araujoBalancingedgetransport2018,
+  title = {Balancing on the Edge: Transport Affinity without Network State},
+  author = {Joao Taveira Araujo and Lorenzo Saino and Lennert Buytenhek and Raul Landa},
+  crossref = {nsdi2018},
+  pages = {111--124},
+}
+
+@inproceedings{ghodsiChoosymaxminfair2013,
+  title = {Choosy: Max-Min Fair Sharing for Datacenter Jobs with Constraints},
+  author = {Ali Ghodsi and Matei Zaharia and Scott Shenker and Ion Stoica},
+  crossref = {eurosys2013},
+  pages = {365--378},
+}
+
+
+@Comment Proceedings
+@proceedings{conext2014,
+  booktitle = CONEXT,
+  address = {Sydney, Australia},
+  month = dec,
+  year = 2014,
+}
+
+@proceedings{eurosys2013,
+  booktitle = EUROSYS,
+  address = {Prague, Czech Republic},
+  month = apr,
+  year = 2013,
+}
+
+@proceedings{eurosys2016,
+  booktitle = EUROSYS,
+  address = {London, United Kingdom},
+  month = apr,
+  year = 2016,
+}
+
+
+@proceedings{fast2014,
+  booktitle = FAST,
+  address = {Santa Clara, CA},
+  month = feb,
+  year = 2010
+}
+
+@proceedings{icnp2013,
+  booktitle = ICNP,
+  address = {Goettingen, Germany},
+  month = oct,
+  year = 2007,
+}
+
+@proceedings{infocom2014,
+  booktitle = INFOCOM,
+  address = {Toronto, ON, Canada},
+  month = apr,
+  year = 2014,
+}
+
+@proceedings{infocom2015,
+  booktitle = INFOCOM,
+  address = {Hong Kong, China},
+  month = apr,
+  year = 2015,
+}
+
+@proceedings{isca2011,
+  booktitle = ISCA,
+  address = {San Jose, CA},
+  month = jun,
+  year = 2011,
+}
+
+@proceedings{isca2016,
+  booktitle = ISCA,
+  address = {Seoul, Korea},
+  month = jun,
+  year = 2016,
+}
+
+@proceedings{ispass2015,
+  booktitle = ISPASS,
+  address = {Philadelphia, PA},
+  month = mar,
+  year = 2015,
+}
+
+@proceedings{iwqos2013,
+  booktitle = IWQOS,
+  address = {Montreal, QC, Canada},
+  month = jun,
+  year = 2013,
+}
+
+@proceedings{nsdi2006,
+  booktitle = NSDI,
+  address = {San Jose, CA},
+  month = may,
+  year = 2006,
+}
+
+@proceedings{nsdi2011,
+  booktitle = NSDI,
+  address = {Boston, MA},
+  month = apr,
+  year = 2011,
+}
+
+@proceedings{nsdi2013,
+  booktitle = NSDI,
+  address = {Lombard, IL},
+  month = apr,
+  year = 2013,
+}
+
+@proceedings{nsdi2016,
+  booktitle = NSDI,
+  address = {Santa Clara, CA},
+  month = mar,
+  year = 2016,
+}
+
+@proceedings{nsdi2018,
+  booktitle = NSDI,
+  address = {Renton, WA},
+  month = apr,
+  year = 2018,
+}
+
+@proceedings{osdi1999,
+  booktitle = OSDI,
+  address = {New Orleans, LA},
+  month = feb,
+  year = 1999
+}
+
+@proceedings{sigcomm1996,
+  booktitle = SIGCOMM,
+  address = {Stanford, CA},
+  month = aug,
+  year = 1996,
+}
+
+@proceedings{sigcomm2016,
+  booktitle = SIGCOMM,
+  address = {Florianopolis, Brazil},
+  month = aug,
+  year = 2016,
+}
+
+@proceedings{sigmetrics2015,
+  booktitle = SIGMETRICS,
+  address = {Portland, OR},
+  month = jun,
+  year = 2015,
+}
+
+@proceedings{socc2013,
+  booktitle = SOCC,
+  address = {Santa Clara, CA},
+  month = oct,
+  year = 2013
+}
+
+@proceedings{socc2014,
+  booktitle = SOCC,
+  address = {Seattle, WA},
+  month = nov,
+  year = 2014
+}
