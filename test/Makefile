@@ -8,10 +8,13 @@ all:
 validate: ref.bib
 	@./validate.pl ref.bib
 
-test: test.ps
+test: test.pdf
 
-test.ps:  test.dvi
-	dvips -o test.ps test.dvi
+test.pdf:  test.tex citations.tex
+	pdflatex test
+	bibtex --min-crossrefs=1000 test
+	pdflatex test
+	pdflatex test
 	@echo
 	@echo
 	@echo "Okay!  It built successfully.  Warnings from the blg:"
@@ -20,12 +23,6 @@ test.ps:  test.dvi
 	@echo
 	@echo "Are any of them yours?"
 
-test.dvi:  test.tex citations.tex
-	latex test
-	bibtex --min-crossrefs=1000 test
-	latex test
-	latex test
-
 citations.tex:  ref.bib
 	./maketest.pl < ref.bib > citations.tex
 
@@ -33,4 +30,4 @@ ref.bib:
 	if [ ! -f ref.bib ]; then ln -s ../ref.bib ./; fi;
 
 clean:
-	/bin/rm -f citations.tex test.ps test.dvi ref.bib test.aux test.bbl test.blg test.log
+	/bin/rm -f citations.tex test.pdf ref.bib test.aux test.bbl test.blg test.log
