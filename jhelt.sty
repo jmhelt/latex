@@ -20,17 +20,32 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \RequirePackage{xspace}
+\RequirePackage{amsthm}
+
 
 %% General
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator{\R}{\mathbb{R}}
 
 %% Probability and Statistics
 \newcommand{\given}{\mid}
-\DeclareMathOperator{\E}{\mathbf{E}}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\DeclareMathOperator{\1}{\mathbb{1}}
+\newcommand{\Sample}{\ensuremath{\mathcal{S}}}
+\newcommand{\Hyp}{\ensuremath{\mathcal{H}}}
+\newcommand{\F}{\ensuremath{\mathcal{F}}}
+\newcommand{\C}{\ensuremath{\mathcal{C}}}
+\newcommand{\X}{\ensuremath{\mathcal{X}}}
+\newcommand{\Y}{\ensuremath{\mathcal{Y}}}
 
 %% Linear algebra
 \newcommand{\trace}[1]{\operatorname{\textbf{tr}}\left(#1\right)}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+% Theorems
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}{Proposition}[section]
 
 \endinput
