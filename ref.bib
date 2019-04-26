@@ -21,6 +21,7 @@
 @string{IWQOS="{Proc.\ IEEE/ACM International Symposium on Quality of Service (IWQoS)}"}
 @string{NSDI="{Proc.\ USENIX Symposium on Networked Systems Design and Implementation (NSDI)}"}
 @string{OSDI="{Proc.\ USENIX Symposium on Operating Systems Design and Implementation (OSDI)}"}
+@string{PDIS="{Proc.\ International Conference on Parallel and Distributed Information Systems (PDIS)}"}
 @string{PODC="{Proc.\ ACM Symposium on Principles of Distributed Computing (PODC)}"}
 @string{PODS="{Proc.\ ACM Symposium on Principles of Database Systems (PODS)}"}
 @string{SIGCOMM="{Proc.\ ACM SIGCOMM}"}
@@ -28,8 +29,23 @@
 @string{SIGMOD="{Proc.\ ACM SIGMOD}"}
 @string{SOCC="{Proc.\ ACM Symposium on Cloud Computing (SOCC)}"}
 @string{SOSP="{Proc.\ ACM Symposium on Operating Systems Principles (SOSP)}"}
+@string{VLDB="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{lampson1993New2PCOptimization,
+  title = {A new presumed commit optimization for two phase commit},
+  author = {Butler Lampson and David Lomet},
+  crossref = {vldb1993},
+  pages = {630--640},
+}
+
+@inproceedings{lometTimestamping2PC1993,
+  author = {David Lomet},
+  title = {Using timestamping to optimize two phase commit},
+  crossref = {pdis1993},
+  pages = {48--55},
+}
+
 @inproceedings{okiViewstampedReplication1988,
   title = {Viewstamped Replication: A New Primary Copy Method to Support Highly-Available Distributed Systems},
   author = {Brian Oki and Barbara Liskov},
@@ -566,6 +582,13 @@
   year = 2016
 }
 
+@proceedings{pdis1993,
+  booktitle = PDIS,
+  address = {San Diego, CA},
+  month = jan,
+  year = 1993,
+}
+
 @proceedings{podc1988,
   booktitle = PODC,
   address = {Toronto, Ontario, Canada},
@@ -641,4 +664,11 @@
   address = {Monterey, CA},
   month = oct,
   year = 2015,
+}
+
+@proceedings{vldb1993,
+  booktitle = VLDB,
+  address = {Dublin, Ireland},
+  month = aug,
+  year = 1993,
 }
