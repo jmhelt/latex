@@ -5,6 +5,7 @@
 @string{CCR="{ACM Computer Communications Review (CCR)}"}
 @string{JACM="{Journal of the ACM (JACM)}"}
 @string{SIGACT="{ACM SIGACT News}"}
+@string{PER="{SIGMETRICS Performance Evaluation Review (PER)}"}
 @string{TEAC="{ACM Transactions on Economics and Computation (TEAC)}"}
 @string{TOCS="{ACM Transactions on Computer Systems (TOCS)}"}
 @string{TON="{IEEE/ACM Transactions on Networking (TON)}"}
@@ -12,6 +13,7 @@
 @string{TPDS="{IEEE Transactions on Parallel and Distributed Systems (TPDS)}"}
 
 @Comment Proceedings Abbreviations
+@string{ATC="{Proc.\ USENIX Annual Technical Conference (ATC)}"}
 @string{CONEXT="{Proc.\ ACM International Conference on emerging Networking EXperiments and Technologies (CoNEXT)}"}
 @string{EUROSYS="{Proc.\ ACM European Conference on Computer Systems (EuroSys)}"}
 @string{FAST="{Proc.\ USENIX Conference on File and Storage Technologies (FAST)}"}
@@ -33,6 +35,31 @@
 @string{VLDB="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{debnathSkimpyStash2011,
+  title = {{{SkimpyStash}}: {{RAM}} space skimpy key-value store on flash-based storage},
+  author = {Biplob Debnath and Sudipta Sengupta and Jin Li},
+  crossref = {sigmod2011},
+  pages = {25--36},
+}
+
+@inproceedings{bronsonTAO2013,
+  title = {{{TAO}}: Facebook’s distributed data store for the social graph},
+  author = {Nathan Bronson and Zach Amsden and George Cabrera and Prasad Chakka and Peter Dimov and Hui Ding and Jack Ferris and Anthony Giardullo and Sachin Kulkarni and Harry Li and others},
+  crossref = {atc2013},
+  pages = {49--60},
+}
+
+@article{atikogluWorkloadAnalysis2012,
+  title = {Workload analysis of a large-scale key-value store},
+  author = {Berk Atikoglu and Yuehai Xu and Eitan Frachtenberg and Song Jiang and Mike Paleczny},
+  journal = PER,
+  volume = 40,
+  number = 1,
+  pages = {53--64},
+  year = 2012,
+  publisher = {ACM}
+}
+
 @article{malkhiSpannerConcurrency2013,
   title = {Spanner's concurrency control},
   author = {Dahlia Malkhi and Jean-Philippe Martin},
@@ -453,6 +480,13 @@
 }
 
 @Comment Proceedings
+@proceedings{atc2013,
+  booktitle = ATC,
+  address = {San Jose, CA},
+  month = jun,
+  year = 2013,
+}
+
 @proceedings{conext2014,
   booktitle = CONEXT,
   address = {Sydney, Australia},
@@ -634,6 +668,13 @@
   address = {Portland, OR},
   month = jun,
   year = 2015,
+}
+
+@proceedings{sigmod2011,
+  booktitle = SIGMOD,
+  address = {Athens, Greece},
+  month = jun,
+  year = 2011,
 }
 
 @proceedings{sigmod2012,
