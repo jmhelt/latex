@@ -11,6 +11,7 @@
 @string{TON="{IEEE/ACM Transactions on Networking (TON)}"}
 @string{TOPLAS="{ACM Transactions on Programming Languages and Systems (TOPLAS)}"}
 @string{TPDS="{IEEE Transactions on Parallel and Distributed Systems (TPDS)}"}
+@string{VLDB="{Proc.\ of the Very Large Data Bases Endowment (PVLDB)}"}
 
 @Comment Proceedings Abbreviations
 @string{ATC="{Proc.\ USENIX Annual Technical Conference (ATC)}"}
@@ -32,14 +33,35 @@
 @string{SIGMOD="{Proc.\ ACM International Conference on Management of Data (SIGMOD)}"}
 @string{SOCC="{Proc.\ ACM Symposium on Cloud Computing (SOCC)}"}
 @string{SOSP="{Proc.\ ACM Symposium on Operating Systems Principles (SOSP)}"}
-@string{VLDB="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
+@string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
-@inproceedings{shuteF1Distributed2013,
+@article{guptaMesa2014,
+  author={Ashish Gupta and Fan Yang and Jason Govig and Adam Kirsch and Kelvin Chan and Kevin Lai and Shuo Wu and Sandeep Govind Dhoot and Abhilash Rajesh Kumar and Ankur Agiwal and Sanjay Bhansali and Mingsheng Hong and Jamie Cameron and Masood Siddiqi and David Jones and Jeff Shute and Andrey Gubarev and Shivakumar Venkataraman and Divyakant Agrawal},
+  title={Mesa: Geo-replicated, Near Real-time, Scalable Data Warehousing},
+  journal=VLDB,
+  issue_date={August 2014},
+  volume=7,
+  number=12,
+  month=aug,
+  year=2014,
+  issn={2150-8097},
+  pages={1259--1270},
+  publisher={VLDB Endowment},
+}
+
+@article{shuteF1Distributed2013,
   author={Jeff Shute and Radek Vingralek and Bart Samwel and Ben Handy and Chad Whipkey and Eric Rollins and Mircea Oancea and Kyle Littlefield and David Menestrina and Stephan Ellner and John Cieslewicz and Ian Rae and Traian Stancescu and Himani Apte},
   title={{{F1}}: A Distributed {{SQL}} Database That Scales},
-  crossref={vldb2013},
-  pages = {1068--1079},
+  journal=VLDB,
+  issue_date={August 2013},
+  volume=6,
+  number=11,
+  month=aug,
+  year=2013,
+  issn={2150-8097},
+  pages={1068--1079},
+  publisher={VLDB Endowment},
 }
 
 @inproceedings{dragojevicNoCompromises2015,
@@ -783,15 +805,9 @@
 }
 
 @proceedings{vldb1993,
-  booktitle=VLDB,
+  booktitle=VLDBCONF,
   address={Dublin, Ireland},
   month=aug,
   year=1993,
 }
 
-@proceedings{vldb2013,
-  booktitle=VLDB,
-  address={Trento, Italy},
-  month=aug,
-  year=2013,
-}
