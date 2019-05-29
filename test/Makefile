@@ -19,9 +19,7 @@ test.pdf:  test.tex citations.tex
 	@echo
 	@echo "Okay!  It built successfully.  Warnings from the blg:"
 	@echo
-	@grep '^Warning' test.blg
-	@echo
-	@echo "Are any of them yours?"
+	@grep '^Warning' test.blg && echo "\nAre any of them yours?" || echo "None! Way to go!"
 
 citations.tex:  ref.bib
 	./maketest.pl < ref.bib > citations.tex
