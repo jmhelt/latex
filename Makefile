@@ -3,8 +3,8 @@ PDFs = main.pdf
 all: $(PDFs)
 
 %.pdf: %.tex
-	latexmk -pdf -bibtex $<
+	latexmk -e '$$bibtex=q/bibtex %O --min-crossrefs=1000 %S/' -pdf -bibtex $<
 
 .PHONY: clean
 clean:
-	latexmk -pdf -bibtex -C
+	latexmk -e '$$bibtex=q/bibtex %O --min-crossrefs=1000 %S/' -pdf -bibtex -C
