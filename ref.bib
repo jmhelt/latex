@@ -18,6 +18,7 @@
 @string{CONEXT="{Proc.\ ACM International Conference on emerging Networking EXperiments and Technologies (CoNEXT)}"}
 @string{EUROSYS="{Proc.\ ACM European Conference on Computer Systems (EuroSys)}"}
 @string{FAST="{Proc.\ USENIX Conference on File and Storage Technologies (FAST)}"}
+@string{HOTOS="{Proc.\ Workshop on Hot Topics in Operating Systems (HotOS)}"}
 @string{ICNP="{Proc.\ IEEE International Conference on Network Protocols (ICNP)}"}
 @string{INFOCOM="{Proc.\ IEEE International Conference on Computer Communications (INFOCOM)}"}
 @string{ISCA="{Proc.\ International Symposium on Computer Architecture (ISCA)}"}
@@ -36,6 +37,12 @@
 @string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{ajouxChallengesToAdopting2015,
+  title={Challenges to adopting stronger consistency at scale},
+  author={Phillipe Ajoux and Nathan Bronson and Sanjeev Kumar and Wyatt Lloyd and Kaushik Veeraraghavan},
+  crossref={hotos2015},
+}
+
 @article{difallahOLTPBench2013,
   author={Djellel Eddine Difallah and Andrew Pavlo and Carlo Curino and Philippe Cudre-Mauroux},
   title={{{OLTP-Bench}}: An Extensible Testbed for Benchmarking Relational Databases},
@@ -627,14 +634,21 @@
   booktitle=FAST,
   address={Santa Clara, CA},
   month=feb,
-  year=2010
+  year=2014,
+}
+
+@proceedings{hotos2015,
+  booktitle=HOTOS,
+  address={Kartause Ittingen, Switzerland},
+  month=may,
+  year=2015,
 }
 
 @proceedings{icnp2013,
   booktitle=ICNP,
   address={Goettingen, Germany},
   month=oct,
-  year=2007,
+  year=2013,
 }
 
 @proceedings{infocom2014,

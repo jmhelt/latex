@@ -77,11 +77,19 @@ while (<IN>) {
        $errors++;
      }
   }
-  if (/\s*year\s*=\s*(.*),/) {
+  if (/^\s*year\s*=\s*([^,]*),?/) {
     $year = $1;
+    chomp $year;
     if ((!($year =~ /^[0-9][0-9][0-9][0-9]$/)) && !except($name, "year")) {
       print "$name Year: $year\n";
       $errors++;
+    } elsif ($type eq "proceedings") {
+      $name =~ /[A-z]+(\d+)/;
+      if ($year ne $1) {
+        print "Debug: $year $1\n";
+	print "Entry $name has incorrect year: $year \n";
+	$errors++;
+      }
     }
   }
   if (/\s*(volume|number)\s*=\s*(.*),/) {
