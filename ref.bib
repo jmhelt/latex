@@ -19,6 +19,7 @@
 @string{EUROSYS="{Proc.\ ACM European Conference on Computer Systems (EuroSys)}"}
 @string{FAST="{Proc.\ USENIX Conference on File and Storage Technologies (FAST)}"}
 @string{HOTOS="{Proc.\ Workshop on Hot Topics in Operating Systems (HotOS)}"}
+@string{ICDE="{Proc.\ IEEE International Conference on Data Engineering (ICDE)}"}
 @string{ICNP="{Proc.\ IEEE International Conference on Network Protocols (ICNP)}"}
 @string{INFOCOM="{Proc.\ IEEE International Conference on Computer Communications (INFOCOM)}"}
 @string{ISCA="{Proc.\ International Symposium on Computer Architecture (ISCA)}"}
@@ -37,20 +38,18 @@
 @string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{hongKuaFuClosing2013,
+  author={Chuntao Hong and Dong Zhou and Mao Yang and Carbo Kuo and Lintao Zhang and Lidong Zhou},
+  title={{{KuaFu}}: Closing the parallelism gap in database replication},
+  crossref={icde2013},
+  pages={1186--1195},
+}
+
 @inproceedings{yanCarouselLow2018,
   author={Yan, Xinan and Yang, Linguan and Zhang, Hongbo and Lin, Xiayue Charles and Wong, Bernard and Salem, Kenneth and Brecht, Tim},
   title={Carousel: Low-Latency Transaction Processing for Globally-Distributed Data},
   crossref={sigmod2018},
-  year={2018},
-  isbn={978-1-4503-4703-7},
   pages={231--243},
-  numpages={13},
-  url={http://doi.acm.org/10.1145/3183713.3196912},
-  doi={10.1145/3183713.3196912},
-  acmid={3196912},
-  publisher={ACM},
-  address={New York, NY, USA},
-  keywords={distributed transactions, globally-distributed data},
 }
 
 @inproceedings{kraskaMDCCMulti2013,
@@ -680,6 +679,13 @@
   address={Kartause Ittingen, Switzerland},
   month=may,
   year=2015,
+}
+
+@proceedings{icde2013,
+  booktitle=ICDE,
+  address={Brisbane, Australia},
+  month=jun,
+  year=2013,
 }
 
 @proceedings{icnp2013,
