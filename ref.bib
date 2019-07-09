@@ -17,6 +17,7 @@
 @Comment Proceedings Abbreviations
 @string{ATC="{Proc.\ USENIX Annual Technical Conference (ATC)}"}
 @string{CONEXT="{Proc.\ ACM International Conference on emerging Networking EXperiments and Technologies (CoNEXT)}"}
+@string{DISC="{Proc.\ International Symposium on Distributed Computing (DISC)}"}
 @string{EUROSYS="{Proc.\ ACM European Conference on Computer Systems (EuroSys)}"}
 @string{FAST="{Proc.\ USENIX Conference on File and Storage Technologies (FAST)}"}
 @string{HOTOS="{Proc.\ Workshop on Hot Topics in Operating Systems (HotOS)}"}
@@ -39,6 +40,13 @@
 @string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{shaoMultiwriterConsistency2003,
+  author={Shao, Cheng and Pierce, Evelyn and Welch, Jennifer L.},
+  title={Multi-writer Consistency Conditions for Shared Memory Objects},
+  crossref={disc2003},
+  pages={106--120},
+}
+
 @article{attiyaSharingMemory1995,
   author={Attiya, Hagit and Bar-Noy, Amotz and Dolev, Danny},
   title={Sharing Memory Robustly in Message-passing Systems},
@@ -123,7 +131,7 @@
   pages={213--231},
 }
 
-@inproceedings{alvaro2010boom,
+@inproceedings{alvaroBOOMAnalytics2010,
   title={{{BOOM}} Analytics: Exploring Data-centric, Declarative Programming for the Cloud},
   author={Alvaro, Peter and Condie, Tyson and Conway, Neil and Elmeleegy, Khaled and Hellerstein, Joseph M and Sears, Russell},
   crossref={eurosys2010},
@@ -769,6 +777,13 @@
   address={Sydney, Australia},
   month=dec,
   year=2014,
+}
+
+@proceedings{disc2003,
+  booktitle=DISC,
+  address={Sorrento, Italy},
+  month=oct,
+  year=2003,
 }
 
 @proceedings{eurosys2010,
