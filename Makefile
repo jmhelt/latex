@@ -1,4 +1,4 @@
-PDFs = main.pdf
+PDFs = paper.pdf
 
 all: $(PDFs)
 

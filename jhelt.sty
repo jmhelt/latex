@@ -7,21 +7,21 @@
 %% in directory macros/latex/base/lppl.txt.
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{jhelt}[2019/01/14 My LaTeX package]
+\ProvidesPackage{jhelt}[2019/07/10 My LaTeX package]
 
 %% Dependencies
+\RequirePackage[group-separator={,}]{siunitx}
 \RequirePackage{algorithm}
 \RequirePackage{algpseudocode}
 \RequirePackage{amsfonts}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
+\RequirePackage{amsthm}
 \RequirePackage{caption}
-\RequirePackage[group-separator={,}]{siunitx}
 \RequirePackage{color}
 \RequirePackage{graphicx}
+\RequirePackage{lipsum}
 \RequirePackage{xspace}
-\RequirePackage{amsthm}
-
 
 %% General
 \DeclareMathOperator*{\argmin}{arg\,min}
@@ -35,7 +35,6 @@
 \newcommand{\Sample}{\ensuremath{\mathcal{S}}}
 \newcommand{\Hyp}{\ensuremath{\mathcal{H}}}
 \newcommand{\F}{\ensuremath{\mathcal{F}}}
-\newcommand{\C}{\ensuremath{\mathcal{C}}}
 \newcommand{\X}{\ensuremath{\mathcal{X}}}
 \newcommand{\Y}{\ensuremath{\mathcal{Y}}}
 
