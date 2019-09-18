@@ -2,9 +2,14 @@ PDFs = paper.pdf
 
 all: $(PDFs)
 
+LATEXMK=latexmk -e '$$bibtex=q/bibtex %O --min-crossrefs=1000 %S/' -pdf -bibtex
+PS2PDF=ps2pdf14 -dPDFSETTINGS=/prepress
+
 %.pdf: %.tex
-	latexmk -e '$$bibtex=q/bibtex %O --min-crossrefs=1000 %S/' -pdf -bibtex $<
+	$(LATEXMK) $<
+	$(PS2PDF) $@ $(basename $@)-embedfonts.pdf
 
 .PHONY: clean
 clean:
-	latexmk -e '$$bibtex=q/bibtex %O --min-crossrefs=1000 %S/' -pdf -bibtex -C
+	$(LATEXMK) -C
+	rm -f comment.cut
