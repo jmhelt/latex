@@ -1,0 +1,73 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{mpass}[2019/10/01 Message-passing diagrams]
+
+% Required packages
+\RequirePackage{etoolbox}
+\RequirePackage{tikz}
+\RequirePackage{fp}
+\RequirePackage{xargs}
+
+\usetikzlibrary{positioning}
+
+\newcounter{objoffset}
+\newcounter{msgindex}
+\newcounter{maxtime}
+
+\defcounter{objoffset}{0}
+\defcounter{msgindex}{0}
+\defcounter{maxtime}{0}
+
+\numdef{\bottompadding}{0.5}
+
+\newcommandx{\obj}[3][1=1]{
+    \defcounter{objoffset}{\value{objoffset} + #1}
+
+    \node at (\theobjoffset,0) (#2) {#3};
+    
+    \listadd{\objslist}{#2}
+}
+
+\newcommand{\msginternal}[7]{
+    \coordinate[below=#4 of #3] (\themsgindex) {};
+    \defcounter{msgindex}{\themsgindex + 1};
+    
+    \coordinate[below=#6 of #5] (\themsgindex) {};
+    \defcounter{msgindex}{\themsgindex + 1};
+
+    \path (\the\numexpr\themsgindex-2) -- (\the\numexpr\themsgindex-1)
+    coordinate[pos=#1] (\themsgindex)
+    node[above,sloped,pos=#2] {#7};
+
+    \draw[->] (\the\numexpr\themsgindex-2) -- (\themsgindex);
+    \defcounter{msgindex}{\themsgindex + 1};
+
+    \FPeval\x{round(#4, 0)}
+    \FPeval\y{round(#6, 0)}
+
+    \ifnumgreater{\x}{\themaxtime}{\defcounter{maxtime}{\x}}{};
+    \ifnumgreater{\y}{\themaxtime}{\defcounter{maxtime}{\y}}{}
+}
+
+\newcommandx{\msg}[6][1=0.5]{
+    \msginternal{1.0}{#1}{#2}{#3}{#4}{#5}{#6}
+}
+
+\newcommandx{\msgdropped}[7][1=0.5,2=0.25]{
+    \msginternal{#1}{#2}{#3}{#4}{#5}{#6}{#7}
+}
+
+\newenvironmentx{mpass}[2][1=1in,2=0.5in]
+{\begin{tikzpicture}[x=#1,y=#2,every node/.style={inner sep=0,outer sep=2}]
+\tikzset{>=latex}}
+{\end{tikzpicture}}
+
+\AtEndEnvironment{mpass}{
+    \renewcommand{\do}[1]{
+        \coordinate[below=\themaxtime+\bottompadding of #1] (\themsgindex) {};
+        \draw[ultra thick] (#1.south) -- (\themsgindex);
+        \defcounter{msgindex}{\themsgindex + 1};
+    }
+    [\dolistloop\objslist]
+}
+
+\endinput
