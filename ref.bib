@@ -1,5 +1,8 @@
 @Comment Abbreviations
 
+@Comment Publisher Abbreviations
+@string{ACM="{Association for Computing Machinery}"}
+
 @Comment Journal Abbreviations
 @string{CACM="{Communications of the ACM (CACM)}"}
 @string{CCR="{ACM Computer Communications Review (CCR)}"}
@@ -48,6 +51,32 @@
 @string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{sears2012blsm,
+  author={Sears, Russell and Ramakrishnan, Raghu},
+  title={{bLSM}: A General Purpose Log Structured Merge Tree},
+  crossref={sigmod2012},
+  address={New York, NY, USA},
+  url={https://doi.org/10.1145/2213836.2213862},
+  doi={10.1145/2213836.2213862},
+  booktitle={Proceedings of the 2012 ACM SIGMOD International Conference on Management of Data},
+  pages={217–228},
+  numpages={12},
+  keywords={write amplification, read amplification, read fanout, log structured merge tree, merge scheduling},
+  location={Scottsdale, Arizona, USA},
+  series={SIGMOD ’12}
+}
+
+@article{oneil1996lsm,
+  title={The log-structured merge-tree ({LSM}-tree)},
+  author={O'Neil, Patrick and Cheng, Edward and Gawlick, Dieter and O’Neil, Elizabeth},
+  journal={Acta Informatica},
+  volume=33,
+  number=4,
+  pages={351--385},
+  year=1996,
+  publisher={Springer}
+}
+
 @inproceedings{yu2016tictoc,
   author={Yu, Xiangyao and Pavlo, Andrew and Sanchez, Daniel and Devadas, Srinivas},
   title={{TicToc}: Time Traveling Optimistic Concurrency Control},
@@ -104,7 +133,7 @@
   author={Mohan, C. and Haderle, Don and Lindsay, Bruce and Pirahesh, Hamid and Schwarz, Peter},
   title={{ARIES}: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging},
   year=1992,
-  publisher={Association for Computing Machinery},
+  publisher=ACM,
   address={New York, NY},
   volume=17,
   number=1,
@@ -200,7 +229,7 @@
   author={Afek, Yehuda and Brown, Geoffrey and Merritt, Michael},
   title={Lazy Caching},
   year=1993,
-  publisher={Association for Computing Machinery},
+  publisher=ACM,
   address={New York, NY, USA},
   volume=15,
   number=1,
@@ -726,7 +755,7 @@
   title={Building Consistent Transactions with Inconsistent Replication},
   journal=TOCS,
   year=2018,
-  publisher={Association for Computing Machinery},
+  publisher=ACM,
   address={New York, NY, USA},
   volume=35,
   number=4,
@@ -1605,6 +1634,7 @@
   address={Athens, Greece},
   month=jun,
   year=2011,
+  publisher=ACM,
 }
 
 @proceedings{sigmod2012,
@@ -1612,6 +1642,7 @@
   address={Scottsdale, AZ},
   month=may,
   year=2012,
+  publisher=ACM,
 }
 
 @proceedings{sigmod2013,
@@ -1619,6 +1650,7 @@
   address={New York, NY},
   month=jun,
   year=2013,
+  publisher=ACM,
 }
 
 @proceedings{sigmod2016,
@@ -1626,6 +1658,7 @@
   address={San Francisco, CA},
   month=jun,
   year=2016,
+  publisher=ACM,
 }
 
 @proceedings{sigmod2017,
@@ -1633,6 +1666,7 @@
   address={Chicago, Illinois},
   month=may,
   year=2017,
+  publisher=ACM,
 }
 
 @proceedings{sigmod2018,
@@ -1640,6 +1674,7 @@
   address={Houston, TX},
   month=jun,
   year=2018,
+  publisher=ACM,
 }
 
 @proceedings{socc2013,
