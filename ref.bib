@@ -25,6 +25,7 @@
 @string{VLDBJ="{The VLDB Journal}"}
 
 @Comment Proceedings Abbreviations
+@string{ASPLOS="{Proc.\ International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)}"}
 @string{ATC="{Proc.\ USENIX Annual Technical Conference (ATC)}"}
 @string{CIDR="Proc.\ Conference on Innovative Data Systems Research (CIDR)"}
 @string{CONEXT="{Proc.\ ACM International Conference on emerging Networking EXperiments and Technologies (CoNEXT)}"}
@@ -53,6 +54,13 @@
 @string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{lu2008concurrencyBugs,
+  author={Lu, Shan and Park, Soyeon and Seo, Eunsoo and Zhou, Yuanyuan},
+  title={Learning From Mistakes: A Comprehensive Study on Real World Concurrency Bug Characteristics},
+  crossref={asplos2008},
+  pages={329--339},
+}
+
 @techreport{lipton1988pram,
   title={{PRAM}: A scalable shared memory},
   author={Richard J. Lipton and Jonathan S. Sandberg},
@@ -1029,7 +1037,7 @@
   journal=CACM,
   volume=21,
   number=7,
-  pages ={558--565},
+  pages={558--565},
   year=1978,
 }
 
@@ -1377,11 +1385,20 @@
 }
 
 @Comment Proceedings
+@proceedings{asplos2008,
+  booktitle=ASPLOS,
+  address={Seattle, WA},
+  month=mar,
+  year=2008,
+  publisher=ACM,
+}
+
 @proceedings{atc2004,
   booktitle=ATC,
   address={Boston, MA},
   month=jun,
   year=2004,
+  publisher=USENIX,
 }
 
 @proceedings{atc2010,
@@ -1389,6 +1406,7 @@
   address={Boston, MA},
   month=jun,
   year=2010,
+  publisher=USENIX,
 }
 
 @proceedings{atc2013,
