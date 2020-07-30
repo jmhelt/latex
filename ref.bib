@@ -2,6 +2,7 @@
 
 @Comment Publisher Abbreviations
 @string{ACM="{Association for Computing Machinery}"}
+@string{IEEE="{Institute of Electrical and Electronics Engineers}"}
 @string{SPRINGER="{Springer}"}
 @string{USENIX="{USENIX Association}"}
 
@@ -40,6 +41,7 @@
 @string{ISCA="{Proc.\ International Symposium on Computer Architecture (ISCA)}"}
 @string{ISPASS="{Proc.\ IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)}"}
 @string{IWQOS="{Proc.\ IEEE/ACM International Symposium on Quality of Service (IWQoS)}"}
+@string{MICRO="{Proc.\ IEEE/ACM International Symposium on Microarchitecture (MICRO)}"}
 @string{NSDI="{Proc.\ USENIX Symposium on Networked Systems Design and Implementation (NSDI)}"}
 @string{OPODIS="{Proc.\ International Conference On Principles Of Distributed Systems (OPODIS)}"}
 @string{OSDI="{Proc.\ USENIX Symposium on Operating Systems Design and Implementation (OSDI)}"}
@@ -55,6 +57,13 @@
 @string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{jeffrey2018espresso,
+  author={M. C. Jeffrey and V. A. Ying and S. Subramanian and H. R. Lee and J. Emer and D. Sanchez},
+  title={Harmonizing Speculative and Non-Speculative Execution in Architectures for Ordered Parallelism},
+  crossref={micro2018},
+  pages={217--230},
+}
+
 @article{bailis2014network,
   author={Bailis, Peter and Kingsbury, Kyle},
   title={The Network is Reliable},
@@ -1745,6 +1754,14 @@
   address={Montreal, QC, Canada},
   month=jun,
   year=2013,
+}
+
+@proceedings{micro2018,
+  booktitle=MICRO,
+  address={Fukuoka City, Japan},
+  month=oct,
+  year=2018,
+  publisher=IEEE,
 }
 
 @proceedings{nsdi2006,
