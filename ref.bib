@@ -3,6 +3,7 @@
 @Comment Publisher Abbreviations
 @string{ACM="{Association for Computing Machinery}"}
 @string{IEEE="{Institute of Electrical and Electronics Engineers}"}
+@string{INTERNETSOCIETY="{The Internet Society}"}
 @string{SPRINGER="{Springer}"}
 @string{USENIX="{USENIX Association}"}
 
@@ -29,6 +30,7 @@
 @Comment Proceedings Abbreviations
 @string{ASPLOS="{Proc.\ International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)}"}
 @string{ATC="{Proc.\ USENIX Annual Technical Conference (ATC)}"}
+@string{CCS="Proc.\ ACM SIGSAC Conference on Computer and Communications Security (CCS)"}
 @string{CIDR="Proc.\ Conference on Innovative Data Systems Research (CIDR)"}
 @string{CONEXT="{Proc.\ ACM International Conference on emerging Networking EXperiments and Technologies (CoNEXT)}"}
 @string{DISC="{Proc.\ International Symposium on Distributed Computing (DISC)}"}
@@ -36,12 +38,14 @@
 @string{FAST="{Proc.\ USENIX Conference on File and Storage Technologies (FAST)}"}
 @string{HOTOS="{Proc.\ Workshop on Hot Topics in Operating Systems (HotOS)}"}
 @string{ICDE="{Proc.\ IEEE International Conference on Data Engineering (ICDE)}"}
+@string{SP="{Proc.\ IEEE Symposium on Security and Privacy (S\&P)}"}
 @string{ICNP="{Proc.\ IEEE International Conference on Network Protocols (ICNP)}"}
 @string{INFOCOM="{Proc.\ IEEE International Conference on Computer Communications (INFOCOM)}"}
 @string{ISCA="{Proc.\ International Symposium on Computer Architecture (ISCA)}"}
 @string{ISPASS="{Proc.\ IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)}"}
 @string{IWQOS="{Proc.\ IEEE/ACM International Symposium on Quality of Service (IWQoS)}"}
 @string{MICRO="{Proc.\ IEEE/ACM International Symposium on Microarchitecture (MICRO)}"}
+@string{NDSS="{Proc.\ Network and Distributed System Security Symposium (NDSS)}"}
 @string{NSDI="{Proc.\ USENIX Symposium on Networked Systems Design and Implementation (NSDI)}"}
 @string{OPODIS="{Proc.\ International Conference On Principles Of Distributed Systems (OPODIS)}"}
 @string{OSDI="{Proc.\ USENIX Symposium on Operating Systems Design and Implementation (OSDI)}"}
@@ -54,9 +58,120 @@
 @string{SIGMOD="{Proc.\ ACM International Conference on Management of Data (SIGMOD)}"}
 @string{SOCC="{Proc.\ ACM Symposium on Cloud Computing (SOCC)}"}
 @string{SOSP="{Proc.\ ACM Symposium on Operating Systems Principles (SOSP)}"}
+@string{USENIXSEC="{Proc.\ USENIX Security Symposium}"}
 @string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{grubbs2020pancake,
+  author={Paul Grubbs and Anurag Khandelwal and Marie-Sarah Lacharit{\'e} and Lloyd Brown and Lucy Li and Rachit Agarwal and Thomas Ristenpart},
+  title={{PANCAKE}: Frequency Smoothing for Encrypted Data Stores},
+  crossref={usenixsec2020},
+  pages={2451--2468},
+}
+
+@inproceedings{stefanov2013oblivistore,
+  title={{ObliviStore}: High Performance Oblivious Cloud Storage},
+  author={Stefanov, Emil and Shi, Elaine},
+  crossref={sp2013},
+  pages={253--267},
+}
+
+@inproceedings{bindschaedler2015curious,
+  author={Bindschaedler, Vincent and Naveed, Muhammad and Pan, Xiaorui and Wang, XiaoFeng and Huang, Yan},
+  title={Practicing Oblivious Access on Cloud Storage: The Gap, the Fallacy, and the New Way Forward},
+  crossref={ccs2015},
+  pages={837--849},
+}
+
+@inproceedings{sahin2016taostore,
+  title={{TaoStore}: Overcoming Asynchronicity in Oblivious Data Storage},
+  author={Cetin Sahin and Victor Zakhary and Amr El Abbadi and Huijia Lin and Stefano Tessaro},
+  crossref={sp2016},
+  pages={198--217},
+}
+
+@inproceedings{stefanov2013pathORAM,
+  author={Stefanov, Emil and van Dijk, Marten and Shi, Elaine and Fletcher, Christopher and Ren, Ling and Yu, Xiangyao and Devadas, Srinivas},
+  title={Path {ORAM}: An Extremely Simple Oblivious {RAM} Protocol},
+  crossref={ccs2013},
+  pages={299--310},
+}
+
+@article{stefanov2018pathORAM,
+  author={Stefanov, Emil and Dijk, Marten Van and Shi, Elaine and Chan, T.-H. Hubert and Fletcher, Christopher and Ren, Ling and Yu, Xiangyao and Devadas, Srinivas},
+  title={Path {ORAM}: An Extremely Simple Oblivious {RAM} Protocol},
+  journal=JACM,
+  month=apr,
+  volume=65,
+  number=4,
+  articleno=18,
+  numpages=26,
+  year=2018,
+  publisher=ACM,
+  issn={0004-5411},
+}
+
+@inproceedings{ren2015constantsCount,
+  author={Ling Ren and Christopher Fletcher and Albert Kwon and Emil Stefanov and Elaine Shi and Marten van Dijk and Srinivas Devadas},
+  title={Constants Count: Practical Improvements to Oblivious {RAM}},
+  crossref={usenixsec2015},
+  pages={415--430},
+}
+
+@inproceedings{stefanov2012practicalORAM,
+  author={Emil Stefanov and Elaine Shi and Dawn Song},
+  title={Towards Practical Oblivious {RAM}},
+  crossref={ndss2012},
+  pages={1--19},
+}
+
+@inproceedings{shi2011worstcase,
+  title={Oblivious {RAM} with {$O((\log N)^3)$} worst-case cost},
+  author={Shi, Elaine and Chan, T-H Hubert and Stefanov, Emil and Li, Mingfei},
+  booktitle="{Proc.\ International Conference on The Theory and Application of Cryptology and Information Security (ASIACRYPT)}",
+  pages={197--214},
+  location={Seoul, South Korea},
+  month=dec,
+  year=2011,
+  publisher=SPRINGER,
+}
+
+@inproceedings{crooks2018obladi,
+  author={Natacha Crooks and Matthew Burke and Ethan Cecchetti and Sitar Harel and Rachit Agarwal and Lorenzo Alvisi},
+  title={Obladi: Oblivious Serializable Transactions in the Cloud},
+  crossref={osdi2018},
+  pages={727--743},
+}
+
+@inproceedings{williams2012privatefs,
+  author={Williams, Peter and Sion, Radu and Tomescu, Alin},
+  title={{PrivateFS}: A Parallel Oblivious File System},
+  crossref={ccs2012},
+  pages={977--988},
+}
+
+@inproceedings{lorch2013shroud,
+  author={Jacob R. Lorch and Bryan Parno and James Mickens and Mariana Raykova and Joshua Schiffman},
+  title={Shroud: Ensuring Private Access to Large-Scale Data in the Data Center},
+  crossref={fast2013},
+  pages={199--213},
+}
+
+@techreport{boneh2011obliviousStorage,
+ author={Dan Boneh and David Mazi{\`e}res and Raluca Ada Popa},
+ title={Remote Oblivious Storage: Making Oblivious {RAM} Practical},
+ institution={{MIT} Computer Science and Artificial Intelligence Laboratory},
+ year=2011,
+ number={MIT-CSAIL-TR-2011-018},
+}
+
+@inproceedings{blass2014hive,
+  author={Blass, Erik-Oliver and Mayberry, Travis and Noubir, Guevara and Onarlioglu, Kaan},
+  title={Toward Robust Hidden Volumes Using Write-Only Oblivious RAM},
+  crossref={ccs2014},
+  pages={203--214},
+}
+
 @inproceedings{alquraan2018partitions,
   author={Ahmed Alquraan and Hatem Takruri and Mohammed Alfatafta and Samer Al-Kiswany},
   title={An Analysis of Network-Partitioning Failures in Cloud Systems},
@@ -325,7 +440,7 @@
   number=4,
   pages={351--385},
   year=1996,
-  publisher={Springer}
+  publisher=SPRINGER
 }
 
 @inproceedings{yu2016tictoc,
@@ -343,7 +458,7 @@
   number=1,
   pages={37--49},
   year=1995,
-  publisher={Springer},
+  publisher=SPRINGER,
 }
 
 @inproceedings{mao2012masstree,
@@ -1287,7 +1402,7 @@
   month=jun,
   year=1986,
   pages={77--101},
-  publisher={Springer},
+  publisher=SPRINGER,
 }
 
 @inproceedings{demmeRapidIdentificationArchitectural2011,
@@ -1601,11 +1716,36 @@
   publisher=USENIX,
 }
 
-@proceedings{conext2014,
-  booktitle=CONEXT,
-  address={Sydney, Australia},
-  month=dec,
+@proceedings{ccs2012,
+  booktitle=CCS,
+  location={Raleigh, NC},
+  month=oct,
+  year=2012,
+  publisher=ACM,
+}
+
+@proceedings{ccs2013,
+  booktitle=CCS,
+  location={Berlin, Germany},
+  month=nov,
+  year=2013,
+  publisher=ACM,
+}
+
+@proceedings{ccs2014,
+  booktitle=CCS,
+  location={Scottsdale, AZ},
+  month=nov,
   year=2014,
+  publisher=ACM,
+}
+
+@proceedings{ccs2015,
+  booktitle=CCS,
+  location={Denver, CO},
+  month=oct,
+  year=2015,
+  publisher=ACM,
 }
 
 @proceedings{cidr2015,
@@ -1613,6 +1753,13 @@
   address={Asilomar, CA},
   month=jan,
   year=2015,
+}
+
+@proceedings{conext2014,
+  booktitle=CONEXT,
+  address={Sydney, Australia},
+  month=dec,
+  year=2014,
 }
 
 @proceedings{disc1999,
@@ -1679,11 +1826,20 @@
   publisher=ACM,
 }
 
+@proceedings{fast2013,
+  booktitle=FAST,
+  address={Santa Jose, CA},
+  month=feb,
+  year=2013,
+  publisher=USENIX,
+}
+
 @proceedings{fast2014,
   booktitle=FAST,
   address={Santa Clara, CA},
   month=feb,
   year=2014,
+  publisher=USENIX,
 }
 
 @proceedings{hotos2015,
@@ -1720,6 +1876,22 @@
   address={Goettingen, Germany},
   month=oct,
   year=2013,
+}
+
+@proceedings{sp2013,
+  booktitle=SP,
+  address={Berkeley, CA},
+  month=may,
+  year=2013,
+  publisher=IEEE,
+}
+
+@proceedings{sp2016,
+  booktitle=SP,
+  address={San Jose, CA},
+  month=may,
+  year=2016,
+  publisher=IEEE,
 }
 
 @proceedings{infocom2014,
@@ -1770,6 +1942,14 @@
   month=oct,
   year=2018,
   publisher=IEEE,
+}
+
+@proceedings{ndss2012,
+  booktitle=NDSS,
+  address={San Diego, CA},
+  month=feb,
+  year=2012,
+  publisher=INTERNETSOCIETY,
 }
 
 @proceedings{nsdi2006,
@@ -2106,6 +2286,22 @@
   month=oct,
   year=2017,
   publisher=ACM,
+}
+
+@proceedings{usenixsec2015,
+  booktitle=USENIXSEC,
+  address={Washington, D.C.},
+  month=aug,
+  year=2015,
+  publisher=USENIX,
+}
+
+@proceedings{usenixsec2020,
+  booktitle=USENIXSEC,
+  address={Virtual Event},
+  month=aug,
+  year=2020,
+  publisher=USENIX,
 }
 
 @proceedings{vldb1993,
