@@ -1,4 +1,6 @@
 \documentclass[10pt,twocolumn]{article}
+
+\usepackage[square,numbers]{natbib}
 \usepackage{url}
 
 % Postscript fonts
@@ -102,12 +104,14 @@
 
 \begin{sloppypar}
 
+\begin{small}
 \input{citations}
+\end{small}
 
 %\begin{footnotesize}
 \begin{small}
 \bibliography{ref}
-\bibliographystyle{acm}
+\bibliographystyle{ACM-Reference-Format}
 \end{small}
 %\end{footnotesize}
 

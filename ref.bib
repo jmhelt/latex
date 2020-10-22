@@ -64,6 +64,13 @@
 @string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{li2020leapio,
+  author={Li, Huaicheng and Hao, Mingzhe and Novakovic, Stanko and Gogte, Vaibhav and Govindan, Sriram and Ports, Dan R. K. and Zhang, Irene and Bianchini, Ricardo and Gunawi, Haryadi S. and Badam, Anirudh},
+  title={{LeapIO}: Efficient and Portable Virtual {NVMe} Storage on {ARM} {SoCs}},
+  crossref={asplos2020},
+  pages={591--605},
+}
+
 @article{zhu2019harmonia,
   author={Zhu, Hang and Bai, Zhihao and Li, Jialin and Michael, Ellis and Ports, Dan R. K. and Stoica, Ion and Jin, Xin},
   title={Harmonia: Near-Linear Scalability For Replicated Storage With In-Network Conflict Detection},
@@ -1116,7 +1123,7 @@
   pages={345--360},
 }
 
-@inproceedings{hongKuaFuClosing2013,
+@inproceedings{hong2013kuafu,
   author={Chuntao Hong and Dong Zhou and Mao Yang and Carbo Kuo and Lintao Zhang and Lidong Zhou},
   title={{KuaFu}: Closing the parallelism gap in database replication},
   crossref={icde2013},
@@ -1474,7 +1481,7 @@
   publisher=SPRINGER,
 }
 
-@inproceedings{demmeRapidIdentificationArchitectural2011,
+@inproceedings{demme2011preciseCounting,
   title={Rapid Identification of Architectural Bottlenecks via Precise Event Counting},
   author={John Demme and Simha Sethumadhavan},
   crossref={isca2011},
@@ -1552,7 +1559,7 @@
   pages={324--336},
 }
 
-@inproceedings{bonaldMultiResourceFairnessObjectives2015,
+@inproceedings{bonald2015mrf,
   title={Multi-Resource Fairness: Objectives, Algorithms and Performance},
   author={Thomas Bonald and James Roberts},
   crossref={sigmetrics2015},
@@ -1637,10 +1644,11 @@
   pages={248--260},
 }
 
-@inproceedings{bhattacharyaHierarchicalSchedulingDiverse2013,
+@inproceedings{bhattacharya2013hdrf,
   title={Hierarchical Scheduling for Diverse Datacenter Workloads},
   author={Arka Bhattacharya and David Culler and Eric Friedman and Ali Ghodsi and Scott Shenker and Ion Stoica},
   crossref={socc2013},
+  pages={1--15},
 }
 
 @inproceedings{araujoBalancingedgetransport2018,
@@ -1692,6 +1700,9 @@
   journal=TOCS,
   volume=26,
   number=2,
+  articleno=4,
+  numpages=26,
+  issn={0734-2071},
   month=jun,
   year=2008,
 }
@@ -1742,6 +1753,14 @@
   address={Washington, DC},
   month=mar,
   year=2009,
+  publisher=ACM,
+}
+
+@proceedings{asplos2020,
+  booktitle=ASPLOS,
+  address={Lausanne, Switzerland},
+  month=mar,
+  year=2020,
   publisher=ACM,
 }
 
@@ -1924,6 +1943,7 @@
   address={Vienna, Austria},
   month=apr,
   year=1993,
+  publisher=IEEE,
 }
 
 @proceedings{icde2001,
@@ -1931,6 +1951,7 @@
   address={Heidelberg, Germany},
   month=apr,
   year=2001,
+  publisher=IEEE,
 }
 
 @proceedings{icde2013,
@@ -1938,6 +1959,7 @@
   address={Brisbane, Australia},
   month=jun,
   year=2013,
+  publisher=IEEE,
 }
 
 @proceedings{icnp2013,
@@ -1982,6 +2004,7 @@
   address={San Jose, CA},
   month=jun,
   year=2011,
+  publisher=IEEE,
 }
 
 @proceedings{isca2016,
@@ -1989,6 +2012,7 @@
   address={Seoul, Korea},
   month=jun,
   year=2016,
+  publisher=IEEE,
 }
 
 @proceedings{ispass2015,
@@ -2231,6 +2255,7 @@
   address={Stanford, CA},
   month=aug,
   year=1996,
+  publisher=ACM,
 }
 
 @proceedings{sigcomm2016,
@@ -2238,6 +2263,7 @@
   address={Florianopolis, Brazil},
   month=aug,
   year=2016,
+  publisher=ACM,
 }
 
 @proceedings{sigmetrics2015,
@@ -2245,6 +2271,7 @@
   address={Portland, OR},
   month=jun,
   year=2015,
+  publisher=ACM,
 }
 
 @proceedings{sigmod1995,
@@ -2315,14 +2342,16 @@
   booktitle=SOCC,
   address={Santa Clara, CA},
   month=oct,
-  year=2013
+  year=2013,
+  publisher=ACM,
 }
 
 @proceedings{socc2014,
   booktitle=SOCC,
   address={Seattle, WA},
   month=nov,
-  year=2014
+  year=2014,
+  publisher=ACM,
 }
 
 @proceedings{sosp2007,
@@ -2410,6 +2439,7 @@
   address={Dublin, Ireland},
   month=aug,
   year=1993,
+  publisher=VLDBEND,
 }
 
 @proceedings{vldb2004,
@@ -2417,5 +2447,6 @@
   address={Toronto, Canada},
   month=aug,
   year=2004,
+  publisher=VLDBEND,
 }
 
