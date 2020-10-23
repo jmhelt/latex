@@ -64,6 +64,12 @@
 @string{VLDBCONF="{Proc.\ International Conference on Very Large Data Bases (VLDB)}"}
 
 @Comment References
+@inproceedings{zhang2020persimmon,
+  title={Persistent State Machines for Recoverable In-memory Storage Systems with {NVRam}},
+  author={Zhang, Wen and Shenker, Scott and Zhang, Irene},
+  crossref={osdi2020},
+}
+
 @inproceedings{li2020leapio,
   author={Li, Huaicheng and Hao, Mingzhe and Novakovic, Stanko and Gogte, Vaibhav and Govindan, Sriram and Ports, Dan R. K. and Zhang, Irene and Bianchini, Ricardo and Gunawi, Haryadi S. and Badam, Anirudh},
   title={{LeapIO}: Efficient and Portable Virtual {NVMe} Storage on {ARM} {SoCs}},
@@ -206,7 +212,7 @@
   author={Shi, Elaine and Chan, T-H Hubert and Stefanov, Emil and Li, Mingfei},
   booktitle="{Proc.\ International Conference on The Theory and Application of Cryptology and Information Security (ASIACRYPT)}",
   pages={197--214},
-  location={Seoul, South Korea},
+  address={Seoul, South Korea},
   month=dec,
   year=2011,
   publisher=SPRINGER,
@@ -622,6 +628,7 @@
   address={Hangzhou, China},
   month=sep,
   year=2014,
+  publisher=SPRINGER,
 }
 
 @inproceedings{cha2004ptime,
@@ -685,6 +692,7 @@
   author={Levandoski, Justin and Lomet, David and Sengupta, Sudipta and Stutsman, Ryan and Wang, Rui},
   title={High Performance Transactions in {{Deuteronomy}}},
   crossref={cidr2015},
+  pages={1--12},
 }
 
 @inproceedings{lim2017cicada,
@@ -854,7 +862,7 @@
  pages={205--220},
 }
 
-@article{vanRenessePaxosModeratelyComplex2015,
+@article{vanRenesse2015paxos,
  author={Van Renesse, Robbert and Altinbuken, Deniz},
  title={Paxos Made Moderately Complex},
  journal=CSUR,
@@ -864,7 +872,6 @@
  year=2015,
  issn={0360-0300},
  pages={42:1--42:36},
- articleno=42,
 }
 
 @article{chandyDistributedSnapshots1985,
@@ -1333,9 +1340,9 @@
   pages={630--640},
 }
 
-@inproceedings{lometTimestamping2PC1993,
+@inproceedings{lomet1993timestamp2PC,
   author={David Lomet},
-  title={Using timestamping to optimize two phase commit},
+  title={Using Timestamping To Optimize Two Phase Commit},
   crossref={pdis1993},
   pages={48--55},
 }
@@ -1441,19 +1448,17 @@
   pages={1400--1408},
 }
 
-@inproceedings{wangMultiResourceRobinLow2013,
+@inproceedings{wang2013mr3,
   title={Multi-Resource Round Robin: A Low Complexity Packet Scheduler with Dominant Resource Fairness},
   crossref={icnp2013},
   author={Wei Wang and Baochun Li and Ben Liang},
   pages={1--10},
 }
 
-@inproceedings{wangLowComplexityMultiresource2014,
+@inproceedings{wang2014gmr3,
   title={Low Complexity Multi-Resource Fair Queueing with Bounded Delay},
-  crossref={infocom2014},
   author={Wei Wang and Ben Liang and Baochun Li},
-  month=apr,
-  year=2014,
+  crossref={infocom2014},
   pages={1914--1922},
 }
 
@@ -1488,7 +1493,7 @@
   pages={353--364},
 }
 
-@inproceedings{weaverSelfmonitoringOverheadLinux2015,
+@inproceedings{weaver2015monitoringOverhead,
   title={Self-Monitoring Overhead of the {Linux} {perf\_event} Performance Counter Interface},
   author={Vincent Weaver},
   crossref={ispass2015},
@@ -1516,10 +1521,11 @@
   pages={456--468},
 }
 
-@inproceedings{liTalesTailHardware2014,
+@inproceedings{li2014tales,
   title={Tales of the Tail: Hardware, OS, and Application-Level Sources of Tail Latency},
   author={Jialin Li and Naveen Sharma and Dan Ports and Steven Gribble},
   crossref={socc2014},
+  pages={1--14},
 }
 
 @inproceedings{schroederOpenClosedCautionary2006,
@@ -1529,15 +1535,16 @@
   pages={239--252},
 }
 
-@article{parkesDominantResourceFairness2015,
+@article{parkes2015drf,
   title={Beyond Dominant Resource Fairness: Extensions, Limitations, and Indivisibilities},
+  author={David Parkes and Ariel Procaccia and Nisarg Shah},
   volume=3,
   issn={2167-8375},
   number=1,
   journal=TEAC,
-  author={David Parkes and Ariel Procaccia and Nisarg Shah},
   month=mar,
   year=2015,
+  pages={3:1--3:22},
 }
 
 @inproceedings{fanMemC3CompactConcurrent,
@@ -1566,10 +1573,11 @@
   pages={31--42},
 }
 
-@inproceedings{loziLinuxschedulerdecade2016,
+@inproceedings{lozi2016wastedCores,
   title={The {Linux} Scheduler: A Decade of Wasted Cores},
   author={Jean-Pierre Lozi and Baptiste Lepers and Justin Funston and Fabien Gaud and Vivien Qu\'ema and Alexandra Fedorova},
   crossref={eurosys2016},
+  pages={1:1--1:16},
 }
 
 @inproceedings{mace2DFQTwoDimensionalFair2016,
@@ -1619,13 +1627,14 @@
   pages={95--110}
 }
 
-@inproceedings{wangMultiresourceGeneralizedProcessor2013,
+@inproceedings{wang2013mrgps,
   title={Multi-Resource Generalized Processor Sharing for Packet Processing},
   author={Wei Wang and Ben Liang and Baochun Li},
   crossref={iwqos2013},
+  pages={147--156},
 }
 
-@inproceedings{wangFairnessEfficiencyTradeoffPacket2014,
+@inproceedings{wang2014fairnessEfficiency,
   title={On the Fairness-Efficiency Tradeoff for Packet Processing with Multiple Resources},
   author={Wei Wang and Chen Feng and Baochun Li and Ben Liang},
   crossref={conext2014},
@@ -1707,7 +1716,7 @@
   year=2008,
 }
 
-@article{thomson2014calvinJourn,
+@article{thomson2014calvin,
   author={Thomson, Alexander and Diamond, Thaddeus and Weng, Shu-Chun and Ren, Kun and Shao, Philip and Abadi, Daniel J.},
   title={Fast Distributed Transactions and Strongly Consistent Replication for OLTP Database Systems},
   journal=TODS,
@@ -1716,6 +1725,7 @@
   number=2,
   issn={0362-5915},
   month=may,
+  pages={11:1--11:39},
 }
 
 @inproceedings{thomson2012calvin,
@@ -1806,7 +1816,7 @@
 
 @proceedings{ccs2012,
   booktitle=CCS,
-  location={Raleigh, NC},
+  address={Raleigh, NC},
   month=oct,
   year=2012,
   publisher=ACM,
@@ -1814,7 +1824,7 @@
 
 @proceedings{ccs2013,
   booktitle=CCS,
-  location={Berlin, Germany},
+  address={Berlin, Germany},
   month=nov,
   year=2013,
   publisher=ACM,
@@ -1822,7 +1832,7 @@
 
 @proceedings{ccs2014,
   booktitle=CCS,
-  location={Scottsdale, AZ},
+  address={Scottsdale, AZ},
   month=nov,
   year=2014,
   publisher=ACM,
@@ -1830,7 +1840,7 @@
 
 @proceedings{ccs2015,
   booktitle=CCS,
-  location={Denver, CO},
+  address={Denver, CO},
   month=oct,
   year=2015,
   publisher=ACM,
@@ -1841,6 +1851,7 @@
   address={Asilomar, CA},
   month=jan,
   year=2015,
+  publisher={\url{cidrdb.org}},
 }
 
 @proceedings{conext2014,
@@ -1848,6 +1859,7 @@
   address={Sydney, Australia},
   month=dec,
   year=2014,
+  publisher=ACM,
 }
 
 @proceedings{disc1999,
@@ -1967,6 +1979,7 @@
   address={Goettingen, Germany},
   month=oct,
   year=2013,
+  publisher=IEEE,
 }
 
 @proceedings{sp2013,
@@ -1990,6 +2003,7 @@
   address={Toronto, ON, Canada},
   month=apr,
   year=2014,
+  publisher=IEEE,
 }
 
 @proceedings{infocom2015,
@@ -1997,6 +2011,7 @@
   address={Hong Kong, China},
   month=apr,
   year=2015,
+  publisher=IEEE,
 }
 
 @proceedings{isca2011,
@@ -2020,6 +2035,7 @@
   address={Philadelphia, PA},
   month=mar,
   year=2015,
+  publisher=IEEE,
 }
 
 @proceedings{iwqos2013,
@@ -2027,6 +2043,7 @@
   address={Montreal, QC, Canada},
   month=jun,
   year=2013,
+  publisher=IEEE,
 }
 
 @proceedings{micro2018,
@@ -2130,6 +2147,7 @@
   address={N\^{\i}mes, France},
   month=dec,
   year=2009,
+  publisher=SPRINGER,
 }
 
 @proceedings{osdi1999,
@@ -2196,11 +2214,20 @@
   publisher=USENIX,
 }
 
+@proceedings{osdi2020,
+  booktitle=OSDI,
+  address={Virtual Event},
+  month=nov,
+  year=2020,
+  publisher=USENIX,
+}
+
 @proceedings{pdis1993,
   booktitle=PDIS,
   address={San Diego, CA},
   month=jan,
   year=1993,
+  publisher=IEEE,
 }
 
 @proceedings{pdis1994,
@@ -2208,6 +2235,7 @@
   address={Austin, TX},
   month=sep,
   year=1994,
+  publisher=IEEE,
 }
 
 @proceedings{podc1988,
