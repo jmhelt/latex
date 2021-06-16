@@ -20,6 +20,7 @@
 @string{TOCS="{ACM Transactions on Computer Systems (TOCS)}"}
 @string{TOC="{IEEE Transactions on Computers}"}
 @string{TODS="{ACM Transactions on Database Systems (TODS)}"}
+@string{TOMACS="{ACM Transactions on Modeling and Computer Simulation (TOMACS)}"}
 @string{TON="{IEEE/ACM Transactions on Networking (TON)}"}
 @string{TOPLAS="{ACM Transactions on Programming Languages and Systems (TOPLAS)}"}
 @string{TPDS="{IEEE Transactions on Parallel and Distributed Systems (TPDS)}"}
@@ -27,6 +28,61 @@
 @string{VLDBJ="{The VLDB Journal}"}
 
 @Comment References
+@article{hormann1996rejinv,
+  author={H\"{o}rmann, W. and Derflinger, G.},
+  title={Rejection-Inversion to Generate Variates from Monotone Discrete Distributions},
+  year=1996,
+  publisher=ACM,
+  address={New York, NY},
+  volume=6,
+  number=3,
+  issn={1049-3301},
+  journal=TOMACS,
+  month=jul,
+  pages={169--184},
+}
+
+@inproceedings{sovran2011walter,
+  author={Sovran, Yair and Power, Russell and Aguilera, Marcos K. and Li, Jinyang},
+  title={Transactional Storage for Geo-Replicated Systems},
+  crossref={sosp2011},
+  pages={385--400},
+}
+
+@inproceedings{gray1994generating,
+  author={Gray, Jim and Sundaresan, Prakash and Englert, Susanne and Baclawski, Ken and Weinberger, Peter J.},
+  title={Quickly Generating Billion-Record Synthetic Databases},
+  crossref={sigmod1994},
+  pages={243--252},
+}
+
+@inproceedings{terry2013slas,
+  author={Terry, Douglas B. and Prabhakaran, Vijayan and Kotla, Ramakrishna and Balakrishnan, Mahesh and Aguilera, Marcos K. and Abu-Libdeh, Hussam},
+  title={Consistency-Based Service Level Agreements for Cloud Storage},
+  crossref={sosp2013},
+  pages={309--324},
+}
+
+@article{cooper2008pnuts,
+  author={Cooper, Brian F. and Ramakrishnan, Raghu and Srivastava, Utkarsh and Silberstein, Adam and Bohannon, Philip and Jacobsen, Hans-Arno and Puz, Nick and Weaver, Daniel and Yerneni, Ramana},
+  title={{PNUTS}: Yahoo!'s Hosted Data Serving Platform},
+  year=2008,
+  publisher=VLDBEND,
+  volume=1,
+  number=2,
+  issn={2150-8097},
+  journal=VLDB,
+  month=aug,
+  pages={1277--1288},
+}
+
+@inproceedings{taft2020crdb,
+  author={Taft, Rebecca and Sharif, Irfan and Matei, Andrei and VanBenschoten, Nathan and Lewis, Jordan and Grieger, Tobias and Niemi, Kai and Woods, Andy and Birzin, Anne and Poss, Raphael and Bardea, Paul and Ranade, Amruta and Darnell, Ben and Gruneir, Bram and Jaffray, Justin and Zhang, Lucy and Mattis, Peter},
+  title={{CockroachDB}: The Resilient Geo-Distributed {SQL} Database},
+  crossref={sigmod2020},
+  pages={1493--1509},
+}
+
 @inproceedings{balegas2015extending,
   author={Balegas, Valter and Serra, Diogo and Duarte, Sérgio and Ferreira, Carla and Shapiro, Marc and Rodrigues, Rodrigo and Pregui{\c{c}}a, Nuno},  
   title={Extending Eventually Consistent Cloud Databases for Enforcing Numeric Invariants},
@@ -57,7 +113,7 @@
   title={Providing High Availability Using Lazy Replication},
   year=1992,
   publisher=ACM,
-  address={New York, NY, USA},
+  address={New York, NY},
   volume=10,
   number=4,
   issn={0734-2071},
@@ -136,7 +192,7 @@
   school={Stanford University},
   advisor={Susan Owicki and Butler Lampson},
   publisher={Stanford University},
-  address={Stanford, CA, USA},
+  address={Stanford, CA},
   pages={1--132}
 }
 
@@ -485,7 +541,7 @@
   address={St. Louis, MO},
 }
 
-@inproceedings{terry1994sessions,
+@inproceedings{terry1994session,
   author={D. B. {Terry} and A. J. {Demers} and K. {Petersen} and M. J. {Spreitzer} and M. M. {Theimer} and B. B. {Welch}},
   title={Session guarantees for weakly consistent replicated data},
   crossref={pdis1994},
@@ -642,7 +698,7 @@
   title={Spanner: {Google's} Globally Distributed Database},
   year=2013,
   publisher=ACM,
-  address={New York, NY, USA},
+  address={New York, NY},
   volume=31,
   number=3,
   issn={0734-2071},
@@ -824,7 +880,7 @@
   title={Lazy Caching},
   year=1993,
   publisher=ACM,
-  address={New York, NY, USA},
+  address={New York, NY},
   volume=15,
   number=1,
   issn={0164-0925},
@@ -1240,7 +1296,7 @@
   pages={133--160},
   numpages=28,
   publisher=ACM,
-  address={New York, NY, USA},
+  address={New York, NY},
 }
 
 @inproceedings{castro1999pbft,
@@ -1513,7 +1569,7 @@
   pages={85--100},
 }
 
-@article{fischerImpossibility1985,
+@article{fischer1985flp,
   title={Impossibility of distributed consensus with one faulty process},
   author={Michael Fischer and Nancy Lynch and Michael Paterson},
   journal=JACM,
