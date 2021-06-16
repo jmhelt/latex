@@ -27,6 +27,45 @@
 @string{VLDBJ="{The VLDB Journal}"}
 
 @Comment References
+@inproceedings{balegas2015extending,
+  author={Balegas, Valter and Serra, Diogo and Duarte, Sérgio and Ferreira, Carla and Shapiro, Marc and Rodrigues, Rodrigo and Pregui{\c{c}}a, Nuno},  
+  title={Extending Eventually Consistent Cloud Databases for Enforcing Numeric Invariants},
+  booktitle={Proc.\ IEEE Symposium on Reliable Distributed Systems (SRDS)},
+  month=oct,
+  year=2015,
+  address={Montreal, Canada},
+  pages={31--36},
+  publisher=IEEE,
+}
+
+@inproceedings{shapiro2011crdt,
+  title={Conflict-free Replicated Data Types},
+  author={Shapiro, Marc and Pregui{\c{c}}a, Nuno and Baquero, Carlos and Zawirski, Marek},
+  crossref={sss2011},
+  pages={386--400},
+}
+
+@inproceedings{terry1995bayou,
+  author ={Terry, D. B. and Theimer, M. M. and Petersen, Karin and Demers, A. J. and Spreitzer, M. J. and Hauser, C. H.},
+  title ={Managing Update Conflicts in Bayou, a Weakly Connected Replicated Storage System},
+  crossref={sosp1995},
+  pages ={172--182},
+}
+
+@article{ladin1992lazyrep,
+  author={Ladin, Rivka and Liskov, Barbara and Shrira, Liuba and Ghemawat, Sanjay},
+  title={Providing High Availability Using Lazy Replication},
+  year=1992,
+  publisher=ACM,
+  address={New York, NY, USA},
+  volume=10,
+  number=4,
+  issn={0734-2071},
+  journal=TOCS,
+  month=nov,
+  pages={360--391},
+}
+
 @inproceedings{lu2020port,
   author={Haonan Lu and Siddhartha Sen and Wyatt Lloyd},
   title={Performance-Optimal Read-Only Transactions},
@@ -480,6 +519,13 @@
   pages={1--10},
 }
 
+@inproceedings{bailis2014ramp,
+  author={Bailis, Peter and Fekete, Alan and Hellerstein, Joseph M. and Ghodsi, Ali and Stoica, Ion},
+  title={Scalable Atomic Visibility with {RAMP} Transactions},
+  crossref={sigmod2014},
+  pages={27--38},
+}
+
 @article{bailis2016ramp,
   author={Bailis, Peter and Fekete, Alan and Ghodsi, Ali and Hellerstein, Joseph M. and Stoica, Ion},
   title={Scalable Atomic Visibility with {RAMP} Transactions},
@@ -541,7 +587,7 @@
 @article{levari2017osc,
   author={Kfir Lev-Ari and Edward Bortnikov and Idit Keidar and Alexander Shraer},
   title={Composing Ordered Sequential Consistency},
-  journal="{Information Processing Letters}",
+  journal={Information Processing Letters},
   month=jul,
   year=2017,
   pages={47--50},
@@ -773,7 +819,7 @@
   pages={295--310},
 }
 
-@article{afek1992LazyCaching,
+@article{afek1992lazyCaching,
   author={Afek, Yehuda and Brown, Geoffrey and Merritt, Michael},
   title={Lazy Caching},
   year=1993,
@@ -801,7 +847,7 @@
   pages={21--35},
 }
 
-@techreport{elnikety2004generalizedSI,
+@techreport{elnikety2004gsi,
   author={Elnikety, Sameh and Pedone, Fernando and Zwaenepoel, Willy},
   title={Generalized Snapshot Isolation and a Prefix-consistent Implementation},
   number={IC/2004/21},
@@ -846,7 +892,7 @@
   numpages=12
 }
 
-@article{kungOCC1981,
+@article{kung1981occ,
   author={Kung, H. T. and Robinson, John T.},
   title={On Optimistic Methods for Concurrency Control},
   year=1981,
@@ -859,7 +905,7 @@
   numpages={14},
 }
 
-@inproceedings{zhengSiloR2014,
+@inproceedings{zheng2014silor,
   author={Wenting Zheng and Stephen Tu and Eddie Kohler and Barbara Liskov},
   title={Fast Databases with Fast Durability and Recovery Through Multicore Parallelism},
   crossref={osdi2014},
@@ -868,7 +914,7 @@
   publisher={{USENIX} Association},
 }
 
-@inproceedings{tuSilo2013,
+@inproceedings{tu2013silo,
   author={Tu, Stephen and Zheng, Wenting and Kohler, Eddie and Liskov, Barbara and Madden, Samuel},
   title={Speedy Transactions in Multicore In-memory Databases},
   crossref={sosp2013},
@@ -877,7 +923,7 @@
   publisher=ACM,
 }
 
-@article{wangQueryFresh2017,
+@article{wang2017queryfresh,
   author={Wang, Tianzheng and Johnson, Ryan and Pandis, Ippokratis},
   title={Query Fresh: Log Shipping on Steroids},
   journal=VLDB,
@@ -891,7 +937,7 @@
   publisher=VLDBEND,
 }
 
-@inproceedings{kimErmia2016,
+@inproceedings{kim2016ermia,
   author={Kim, Kangnyeon and Wang, Tianzheng and Johnson, Ryan and Pandis, Ippokratis},
   title={{{ERMIA}}: Fast Memory-Optimized Database System for Heterogeneous Workloads},
   crossref={sigmod2016},
@@ -900,7 +946,7 @@
   publisher=ACM,
 }
 
-@article{faleiroEarlyWriteVisibility2017,
+@article{faleiro2017pwv,
   author={Faleiro, Jose M. and Abadi, Daniel J. and Hellerstein, Joseph M.},
   title={High Performance Transactions via Early Write Visibility},
   journal=VLDB,
@@ -914,7 +960,7 @@
   publisher=VLDBEND,
 }
 
-@phdthesis{adyaWeakConsistency1999,
+@phdthesis{adya1999weakcons,
   author={Atul Adya},
   advisor={Barbara Liskov},
   school={MIT},
@@ -932,18 +978,7 @@
   pages={33--46},
 }
 
-@article{mavronicolasLinearizableObjects1999,
-  author={Marios Mavronicolas and Dan Roth},
-  title={Linearizable Read/Write Objects},
-  journal={Theoretical Computer Science},
-  volume=220,
-  number=1,
-  pages={267--319},
-  year=1999,
-  issn={0304-3975},
-}
-
-@article{lundeliusClockSynchronization1984,
+@article{lundelius1984clocksync,
   author={Jennifer Lundelius and Nancy Lynch},
   title={An Upper and Lower Bound for Clock Synchronization},
   journal={Information and Control},
@@ -1158,7 +1193,7 @@
   numpages=26,
 }
 
-@inproceedings{adyaSlicerAuto2016,
+@inproceedings{adya2016slicer,
   author={Atul Adya and Daniel Myers and Jon Howell and Jeremy Elson and Colin Meek and Vishesh Khemani and Stefan Fulger and Pan Gu and Lakshminath Bhuvanagiri and Jason Hunter and Roberto Peon and Larry Kai and Alexander Shraer and Arif Merchant and Kfir Lev-Ari},
   title={Slicer: Auto-Sharding for Datacenter Applications},
   crossref={osdi2016},
@@ -1509,7 +1544,7 @@
   publisher={Elsevier},
 }
 
-@inproceedings{goyalStarttimeFairQueueing1996,
+@inproceedings{goyal1996sfq,
   title={Start-Time Fair Queueing: A Scheduling Algorithm for Integrated Services Packet Switching Networks},
   author={Pawan Goyal and Harrick Vin and Haichen Chen},
   crossref={sigcomm1996},
@@ -1599,21 +1634,21 @@
   pages={102--111},
 }
 
-@inproceedings{wangBalancingFairnessEfficiency2014,
+@inproceedings{wang2014balancing,
   title={Balancing Fairness and Efficiency in Tiered Storage Systems with Bottleneck-Aware Allocation},
   crossref={fast2014},
   author={Hui Wang and Peter Varman},
   pages={229--242},
 }
 
-@inproceedings{khalidIronIsolatingNetworkbased2018,
+@inproceedings{khalid018iron,
   title={Iron: Isolating Network-Based {CPU} in Container Environments},
   author={Junair Khalid and Eric Rozner and Weslet Felter and Cong Xu and Karthick Rajamani and Alexandre Ferreira and Aditya Akella},
   crossref={nsdi2018},
   pages={313--328},
 }
 
-@inproceedings{zhangTreadmillAttributingSource2016,
+@inproceedings{zhang2016treadmill,
   title={Treadmill: Attributing the Source of Tail Latency through Precise Load Testing and Statistical Inference},
   author={Yunqi Zhang and David Meisner and Jason Mars and Lingjia Tang},
   crossref={isca2016},
@@ -1627,7 +1662,7 @@
   pages={1--14},
 }
 
-@inproceedings{schroederOpenClosedCautionary2006,
+@inproceedings{schroeder2006openclosed,
   title={Open Versus Closed: A Cautionary Tale},
   author={Bianca Schroeder and Adam Wierman and Mor Harchol-Balter},
   crossref={nsdi2006},
@@ -1646,14 +1681,14 @@
   pages={3:1--3:22},
 }
 
-@inproceedings{fanMemC3CompactConcurrent,
+@inproceedings{fan2013memc3,
   title={MemC3: Compact and Concurrent MemCache with Dumber Caching and Smarter Hashing},
   author={Bin Fan and David Andersen and Michael Kaminsky},
   crossref={nsdi2013},
   pages={371--384},
 }
 
-@article{kanhereFairEfficientPacket2002,
+@article{kanhere2002err,
   title={Fair and Efficient Packet Scheduling Using Elastic Round Robin},
   volume=13,
   issn={1045-9219},
@@ -1672,7 +1707,7 @@
   pages={31--42},
 }
 
-@inproceedings{lozi2016wastedCores,
+@inproceedings{lozi2016wasted,
   title={The {Linux} Scheduler: A Decade of Wasted Cores},
   author={Jean-Pierre Lozi and Baptiste Lepers and Justin Funston and Fabien Gaud and Vivien Qu\'ema and Alexandra Fedorova},
   crossref={eurosys2016},
@@ -1686,21 +1721,21 @@
   pages={144--159},
 }
 
-@inproceedings{bangaResourceContainersNew1999,
+@inproceedings{banga1999containers,
   title={Resource Containers: A New Facility for Resource Management in Server Systems},
   author={Gaurav Banga and Peter Druschel and Jeffrey Mogul},
   crossref={osdi1999},
   pages={45--58},
 }
 
-@inproceedings{chowdhuryHUGMultiresourceFairness2016,
+@inproceedings{chowdhury2016hug,
   title={{HUG}: Multi-Resource Fairness for Correlated and Elastic Demands},
   author={Mosharaf Chowdhury and Zhenhua Liu and Ali Ghodsi and Ion Stoica},
   crossref={nsdi2016},
   pages={407--424},
 }
 
-@article{parekhgeneralizedprocessorsharing1993,
+@article{parekh1993gps,
   title={A Generalized Processor Sharing Approach to Flow Control in Integrated Services Networks: The Single-Node Case},
   volume=1,
   issn={1063-6692},
@@ -1712,14 +1747,14 @@
   pages={344--357},
 }
 
-@inproceedings{ghodsiDominantResourceFairness2011,
+@inproceedings{ghodsi2011drf,
   title={Dominant Resource Fairness: Fair Allocation of Multiple Resource Types},
   author={Ali Ghodsi and Matei Zaharia and Benjamin Hindman and Andy Konwinski and Scott Shenker and Ion Stoica},
   crossref={nsdi2011},
   pages={323--336},
 }
 
-@inproceedings{freedmanExperiences2010,
+@inproceedings{freedman2010coral,
   title={Experiences with {CoralCDN}: A Five-Year Operational View},
   author={Michael J. Freedman},
   crossref={nsdi2010},
@@ -1733,7 +1768,7 @@
   pages={147--156},
 }
 
-@inproceedings{wang2014fairnessEfficiency,
+@inproceedings{wang2014tradeoff,
   title={On the Fairness-Efficiency Tradeoff for Packet Processing with Multiple Resources},
   author={Wei Wang and Chen Feng and Baochun Li and Ben Liang},
   crossref={conext2014},
@@ -1759,7 +1794,7 @@
   pages={1--15},
 }
 
-@inproceedings{araujoBalancingedgetransport2018,
+@inproceedings{araujo2018edge,
   title={Balancing on the Edge: Transport Affinity without Network State},
   author={Joao Taveira Araujo and Lorenzo Saino and Lennert Buytenhek and Raul Landa},
   crossref={nsdi2018},
@@ -1841,7 +1876,7 @@
   pages={73--82},
 }
 
-@inproceedings{curtsinger2015c,
+@inproceedings{curtsinger2015coz,
   author={Charlie Curtsinger and Emery D. Berger},
   title={Coz: Finding code that counts with causal profiling},
   crossref={sosp2015},
